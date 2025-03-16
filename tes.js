@@ -272,10 +272,35 @@
 
 
 
-let array = [1,2,3,4,5,6,7,8,9,10]
+// let array = [1,2,3,4,5,6,7,8,9,10]
 
 
-for(let i = 0; i < array.length; i++){
-    console.log(array[i])
+// for(let i = 0; i < array.length; i++){
+//     console.log(array[i])
+// }
+
+
+// let nombre = "kevin";
+// let bolean = true;
+// let nullx = null;
+// let undefinet = undefined;
+// let simbolo = Symbol("descripcion");
+// let numeroGrande = 123456789012345678901234567890n;
+
+// console.log(typeof nombre)
+// console.log(typeof bolean)
+// console.log(typeof nullx)
+// console.log(typeof undefinet)
+// console.log(typeof simbolo)
+// console.log(typeof numeroGrande)
+
+
+let o = {
+    a: 'a',
+    b: 'b',
+    obj: {
+        key: 'key',
+    },
 }
 
+console.log(o.obj.key)
