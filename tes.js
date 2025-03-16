@@ -280,6 +280,7 @@
 // }
 
 
+
 // let nombre = "kevin";
 // let bolean = true;
 // let nullx = null;
@@ -304,3 +305,13 @@ let o = {
 }
 
 console.log(o.obj.key)
+
+let nombre = "kevin"
+let age = 21
+
+if(age > 22) {
+    console.log("mayor edad")
+} else if(nombre === "kevin"){
+    console.log("ere kevin!!!")
+}
+
