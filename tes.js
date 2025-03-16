@@ -272,10 +272,19 @@
 
 
 
-let array = [1,2,3,4,5,6,7,8,9,10]
+// let array = [1,2,3,4,5,6,7,8,9,10]
 
 
-for(let i = 0; i < array.length; i++){
-    console.log(array[i])
+// for(let i = 0; i < array.length; i++){
+//     console.log(array[i])
+// }
+
+
+let nombre = "kevin"
+let age = 21
+
+if(age > 22) {
+    console.log("mayor edad")
+} else if(nombre === "kevin"){
+    console.log("ere kevin!!!")
 }
-
