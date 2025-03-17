@@ -296,22 +296,8 @@
 // console.log(typeof numeroGrande)
 
 
-let o = {
-    a: 'a',
-    b: 'b',
-    obj: {
-        key: 'key',
-    },
-}
 
-console.log(o.obj.key)
-
-let nombre = "kevin"
-let age = 21
-
-if(age > 22) {
-    console.log("mayor edad")
-} else if(nombre === "kevin"){
-    console.log("ere kevin!!!")
+for(let i = 0; i < 10; i++){
+    console.log("numero",i)
 }
 
