@@ -297,7 +297,8 @@
 // console.log(typeof simbolo)
 // console.log(typeof numeroGrande)
 
-let number = ["🤡","🙉","🐸","🐤","🐶"]
 
-let tes1 = getDocumentById("emoji")
 
+let kevin = () =>{
+    
+}
