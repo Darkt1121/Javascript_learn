@@ -280,11 +280,14 @@
 // }
 
 
-let nombre = "kevin"
-let age = 21
 
-if(age > 22) {
-    console.log("mayor edad")
-} else if(nombre === "kevin"){
-    console.log("ere kevin!!!")
+const kevin = function(a,b){
+    return a + b
+}
+
+console.log(kevin(22,22))
+
+
+let rigs = ()=>{
+
 }
