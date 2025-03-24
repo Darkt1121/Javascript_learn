@@ -120,50 +120,50 @@
 
 
 
-const car = { 
-    model : "Tesla",
-    year : 2024,
-    color : "gren",
-    used : true
-};
+// const car = { 
+//     model : "Tesla",
+//     year : 2024,
+//     color : "gren",
+//     used : true
+// };
 
-if(car.used === true){
-    console.log(`I'm looking for a ${car.year}, ${car.model} that is used.`)
-} else {
-    console.log(`I'm looking for a ${car.year}, ${car.model} that is new.`)
+// if(car.used === true){
+//     console.log(`I'm looking for a ${car.year}, ${car.model} that is used.`)
+// } else {
+//     console.log(`I'm looking for a ${car.year}, ${car.model} that is new.`)
 
-}
-
-
+// }
 
 
 
-const pig = {
-    name : "thor",
-    type : "pig",
-    age : 1200,
-    makeSound () {
-         console.log(`${pig.name} is a ${pig.age} year old ${pig.type} that goes pig 🐷`)
+
+
+// const pig = {
+//     name : "thor",
+//     type : "pig",
+//     age : 1200,
+//     makeSound () {
+//          console.log(`${pig.name} is a ${pig.age} year old ${pig.type} that goes pig 🐷`)
   
        
-    }
-}
+//     }
+// }
 
-pig.makeSound()
+// pig.makeSound()
 
 
 
-const sheep = {
-    name : "loki",
-    type : "sheep",
-    age : 1000,
-    makeSound () {
-        console.log(`${sheep.name} is a ${sheep.age} year old ${sheep.type} that goes sheep 🐑"`)
+// const sheep = {
+//     name : "loki",
+//     type : "sheep",
+//     age : 1000,
+//     makeSound () {
+//         console.log(`${sheep.name} is a ${sheep.age} year old ${sheep.type} that goes sheep 🐑"`)
 
-    }
-}
+//     }
+// }
 
-sheep.makeSound()
+// sheep.makeSound()
 
 
 // const dog = {
@@ -283,17 +283,6 @@ sheep.makeSound()
 
 
 
-const kevin = function(a,b){
-    return a + b
-}
-
-console.log(kevin(22,22))
-
-
-let rigs = ()=>{
-
-}
-
 // let nombre = "kevin";
 // let bolean = true;
 // let nullx = null;
@@ -308,5 +297,7 @@ let rigs = ()=>{
 // console.log(typeof simbolo)
 // console.log(typeof numeroGrande)
 
+let number = ["🤡","🙉","🐸","🐤","🐶"]
 
+let tes1 = getDocumentById("emoji")
 
