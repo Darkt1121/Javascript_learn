@@ -17,6 +17,13 @@ function tte (){
 
 function calculateTotal(){
     let input = document.querySelector('js-cost-input')
-    const cost = inputElement.value
+    let cost = Number(input.value)
+    if(cost > 40){
+       cost = cost + 10 
+    }
+
+   let total = document.querySelector('.js-total-cost')
+        total.textContent = cost
 }
+
 
