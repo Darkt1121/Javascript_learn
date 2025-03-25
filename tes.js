@@ -299,3 +299,5 @@
 
 
 
+let tes = document.querySelector('.day')
+tes.textContent = 'Martes';
