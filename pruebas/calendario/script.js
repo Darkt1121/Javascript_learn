@@ -24,7 +24,9 @@ let input_text_2 = document.querySelector('.js_input_text_2')
 let btn_2 = document.querySelector('.js_btn_add_2')
 let p_result = document.querySelector('.js_p_result')
 
-btn_2.addEventListener("click", function(){
+btn_2.addEventListener("click", function(exx){
+     let name22 = input_text_2
+     
      
 })
 
