@@ -18,3 +18,4 @@ for(let i = 0; i < tes.length; i++){
 }
 
 console.log(result)
+
