@@ -59,11 +59,11 @@
 //         EJERCICIO 3 
 //---------------------------------------------
 
-// const nums = [10,20,30]
-// let tes = nums.pop()
-// let tes2 = nums.push(99)
-// console.log(tes)
-// console.log(nums)
+const nums = [10,20,30]
+let tes = nums.pop()
+let tes2 = nums.push(99)
+console.log(tes)
+console.log(nums)
                // FIN
 //----------------------------------------------
 
@@ -72,21 +72,24 @@
 //         EJERCICIO 4
 //---------------------------------------------
 
-function arraySwap(){
-     let array = [1,20,22,24,5]
+// function arraySwap(){
+//      let array = [1,20,22,24,5]
 
-     let tes = array.pop()
-     let tes2 = array.push(1)
-     array.shift()
-     array.unshift(5)
-     // let tes3 = array.unshift(5)
+//      let tes = array.pop()
+//      let tes2 = array.push(1)
+//      array.shift()
+//      array.unshift(5)
+//      // let tes3 = array.unshift(5)
     
 
-     console.log(tes)
-     console.log(array)
+//      console.log(tes)
+//      console.log(array)
     
-     // console.log(tes3)
+//      // console.log(tes3)
   
-}
+// }
 
-arraySwap()
+// arraySwap()
+
+//     FIN     
+//----------------------------------------------
