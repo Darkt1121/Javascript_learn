@@ -2,33 +2,45 @@
 /// `${}`
                //Ejercicio 1
 //---------------------------------------------------------------------------------
-// let array = ['lunes','martes','miercoles']
-// renderTodoList()
-// function renderTodoList(){    
-//      let arrayResult = ''
-//      for(let i = 0; i < array.length; i++){
-//           const result = array[i]
-//           const html = `<p>${result}</p>`
+let array = [{
+    name: 'kevin',
+    dueDate: '2003-09-12'
+},{
+    name : 'sanchez',
+    dueDate: '1993-03-06'
+}
 
-//           arrayResult += html
-//      }
-//      console.log(arrayResult)
-//      document.querySelector('.js_text_div').innerHTML = arrayResult
-// }
+]
+renderTodoList()
+function renderTodoList(){    
+     let arrayResult = ''
+     for(let i = 0; i < array.length; i++){
+          const resultObjet = array[i]
+          const html = `<p>${resultObjet} 
+          <button onclick="array.splice(${i,1})
+           renderTodoList()">delete
+          </button>
+           </p>`
 
-// let btn_1 = document.querySelector(".js_btn_add_1")
-// let input_text = document.querySelector(".js_input_text")
+          arrayResult += html
+     }
+     console.log(arrayResult)
+     document.querySelector('.js_text_div').innerHTML = arrayResult
+}
 
-// btn_1.addEventListener("click", function(){
+let btn_1 = document.querySelector(".js_btn_add_1")
+let input_text = document.querySelector(".js_input_text")
 
-// let name = input_text.value
-// array.push(name)
-// console.log(array)
+btn_1.addEventListener("click", function(){
 
-// input_text.value = ''
+let name = input_text.value
+array.push(name)
+console.log(array)
 
-// renderTodoList()
-// })
+input_text.value = ''
+
+renderTodoList()
+})
 
                // FIN
 //----------------------------------------------------------------
