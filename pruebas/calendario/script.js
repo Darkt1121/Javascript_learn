@@ -2,42 +2,49 @@
 /// `${}`
                //Ejercicio 1
 //---------------------------------------------------------------------------------
-let array = [{
-    name: 'kevin',
-    dueDate: '2003-09-12'
-},{
-    name : 'sanchez',
-    dueDate: '1993-03-06'
-}
+let array = [
+    { name: 'kevin', dueDate: '2003-09-12' },
+    { name: 'sanchez', dueDate: '1993-03-06' }
+  ];
 
-]
+
 renderTodoList()
 function renderTodoList(){    
      let arrayResult = ''
      for(let i = 0; i < array.length; i++){
           const resultObjet = array[i]
-          const html = `<p>${resultObjet} 
-          <button onclick="array.splice(${i,1})
-           renderTodoList()">delete
-          </button>
+        //   const name = resultObjet.name
+        //   const dueDate = resultObjet.dueDate
+          const {name,dueDate} = resultObjet
+          const html = `<p>${name} ${dueDate}
+          <button onclick="array.splice(${i},1);
+           renderTodoList();
+           ">delete</button>
            </p>`
 
           arrayResult += html
      }
-     console.log(arrayResult)
+    
      document.querySelector('.js_text_div').innerHTML = arrayResult
 }
 
 let btn_1 = document.querySelector(".js_btn_add_1")
 let input_text = document.querySelector(".js_input_text")
+let input_date = document.querySelector(".js_input_date");
 
 btn_1.addEventListener("click", function(){
+    let name = input_text.value.trim();
+    let dueDate = input_date.value;
 
-let name = input_text.value
-array.push(name)
-console.log(array)
+array.push({ name: name, dueDate: dueDate });
+
+// let name = input_text.value
+//  array.push(name)
+
 
 input_text.value = ''
+input_date.value = '';
+
 
 renderTodoList()
 })
@@ -71,11 +78,11 @@ renderTodoList()
 //         EJERCICIO 3 
 //---------------------------------------------
 
-const nums = [10,20,30]
-let tes = nums.pop()
-let tes2 = nums.push(99)
-console.log(tes)
-console.log(nums)
+// const nums = [10,20,30]
+// let tes = nums.pop()
+// let tes2 = nums.push(99)
+// console.log(tes)
+// console.log(nums)
 
                // FIN
 //----------------------------------------------
