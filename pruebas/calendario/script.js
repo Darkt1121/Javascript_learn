@@ -16,11 +16,16 @@ function renderTodoList(){
         //   const name = resultObjet.name
         //   const dueDate = resultObjet.dueDate
           const {name,dueDate} = resultObjet
-          const html = `<p>${name} ${dueDate}
-          <button onclick="array.splice(${i},1);
-           renderTodoList();
-           ">delete</button>
-           </p>`
+          const html = `
+            <div class="todo-item">
+              <div>${name}</div>
+              <div>${dueDate}</div>
+              <button onclick="
+                array.splice(${i},1);
+                renderTodoList();
+              ">delete</button>
+            </div>
+            `;
 
           arrayResult += html
      }
@@ -113,3 +118,20 @@ renderTodoList()
 
 //     FIN     
 //----------------------------------------------
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

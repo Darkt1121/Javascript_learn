@@ -1,6 +1,16 @@
 
-.grid{
+.todo-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+
+
+.js_grid{
     display: grid;
     grid-template-columns: 200px 150px 100px;
+    border: 2px solid red;
     
 }
