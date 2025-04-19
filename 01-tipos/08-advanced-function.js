@@ -21,12 +21,12 @@
 
 
 
-setTimeout(function() {
-    console.log("timeout")
-    console.log("timeout2")
-}, 5000)
+// setTimeout(function() {
+//     console.log("timeout")
+//     console.log("timeout2")
+// }, 5000)
 
-console.log("siguiente");
+// console.log("siguiente");
 
 
 
@@ -46,7 +46,7 @@ console.log("siguiente");
 
 const kevin = ["rigs","sanchez","dionicio"]
 
-kevin.forEach(function(value, index) {
+kevin.forEach((value, index) => {
     console.log(index)
     console.log(value)
 });
