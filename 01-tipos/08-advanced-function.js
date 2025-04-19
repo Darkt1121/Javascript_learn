@@ -34,8 +34,20 @@ console.log("siguiente");
 
 //it will keep running a function in the future
 //----------------------------------------
-setInterval(()=> {
-    console.log("cada 4 segundos")
-},4000)
+
+// setInterval(()=> {
+//     console.log("cada 4 segundos")
+// },4000)
 
 //----------------------------------------
+
+
+
+
+const kevin = ["rigs","sanchez","dionicio"]
+
+kevin.forEach(function(value, index) {
+    console.log(index)
+    console.log(value)
+});
+

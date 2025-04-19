@@ -11,24 +11,44 @@ let array = [
 renderTodoList()
 function renderTodoList(){    
      let arrayResult = ''
-     for(let i = 0; i < array.length; i++){
-          const resultObjet = array[i]
-        //   const name = resultObjet.name
-        //   const dueDate = resultObjet.dueDate
-          const {name,dueDate} = resultObjet
-          const html = `
-            <div class="todo-item">
-              <div>${name}</div>
-              <div>${dueDate}</div>
-              <button onclick="
-                array.splice(${i},1);
-                renderTodoList();
-              ">delete</button>
-            </div>
-            `;
 
-          arrayResult += html
-     }
+    array.forEach(function(resultObjet,index) {
+      // const resultObjet = array[i]
+    
+        const {name,dueDate} = resultObjet
+        const html = `
+          <div class="todo-item">
+            <div>${name}</div>
+            <div>${dueDate}</div>
+            <button onclick="
+              array.splice(${index},1);
+              renderTodoList();
+            ">delete</button>
+          </div>
+          `;
+
+        arrayResult += html
+
+    })
+
+    //  for(let i = 0; i < array.length; i++){
+    //       const resultObjet = array[i]
+    //     //   const name = resultObjet.name
+    //     //   const dueDate = resultObjet.dueDate
+    //       const {name,dueDate} = resultObjet
+    //       const html = `
+    //         <div class="todo-item">
+    //           <div>${name}</div>
+    //           <div>${dueDate}</div>
+    //           <button onclick="
+    //             array.splice(${i},1);
+    //             renderTodoList();
+    //           ">delete</button>
+    //         </div>
+    //         `;
+
+    //       arrayResult += html
+    //  }
     
      document.querySelector('.js_text_div').innerHTML = arrayResult
 }
